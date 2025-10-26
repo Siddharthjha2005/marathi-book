@@ -4,7 +4,6 @@ import 'package:marathi_books/mainpages/navbars.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async{
-
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences prefs = await SharedPreferences.getInstance();
   bool isDarkMode = prefs.getBool("isDarkMode") ?? false;
